@@ -21,10 +21,6 @@
       a{
         color:rgba(255, 255, 255, 1.0);
       }
-      .item{
-        background-color: rgba(141, 105, 175, 0.4);
-        margin-bottom: 20px;
-      }
       .main-container{
         max-width: 640px;
         margin: auto;
@@ -45,12 +41,24 @@
       }
       .social-icons-row{
         margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .item{
+        background-color: rgba(141, 105, 175, 0.4);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
       }
       .thumbnail{
         width: 48px;
         height: 48px;
         object-fit: cover;
         border-radius: 48px;
+      }
+      .link-text{
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
   </head>
@@ -71,15 +79,15 @@
       <div class="links-row">
         <div class="item">
           <img class="thumbnail" src="https://www.codepath.org/hubfs/codepath-1x1_solid-dark.png" alt=" CodePath Icon">
-          <a href="https://www.codepath.org/" target="_blank">CodePath Technical Courses For Students</a>
+          <a class="link-text" href="https://www.codepath.org/" target="_blank">CodePath Technical Courses For Students</a>
         </div>
         <div class="item">
           <img class="thumbnail" src="/images/girls_who_code_icon.png" alt="">
-          <a href="https://girlswhocode.com/" target="_blank"> Girls Who Code</a>
+          <a class="link-text" href="https://girlswhocode.com/" target="_blank"> Girls Who Code</a>
         </div>
         <div class="item">
           <img class="thumbnail" src="/images/open-avenue-foundations.jpg" alt="Open Avenue Foundations Image">
-          <a href="https://www.openavenuesfoundation.org/" target="_blank">Micro-Internships For Students</a>
+          <a class="link-text" href="https://www.openavenuesfoundation.org/" target="_blank">Micro-Internships For Students</a>
         </div>
       </div>
     </div>
